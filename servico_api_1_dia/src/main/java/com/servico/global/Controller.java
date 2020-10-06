@@ -51,5 +51,11 @@ public class Controller {
 		repository.save(model);
 		return model;
 	}
+	
+	@DeleteMapping("/servicos/{id}")
+	public String remover(@PathVariable Long id) {
+		repository.deleteById(id);
+		return "Sucesso";
+	}
 
 }

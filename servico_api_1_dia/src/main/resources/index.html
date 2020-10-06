@@ -1,17 +1,25 @@
-<!DOCTYPE html>
 <html>
-<heard>
-<title>Page Title</title>
-</head>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>        
+        <script src="controller.js"></script>
+      
+    </head>
 <body>
-<Form>
-ID:
-<input type="number">
-NOME:
-<input type="text">
-DATA:
-<input type="date"> <HR>
-<input type="submit" value="Cadastrar">
-</form>
+    <div ng-app="myApp" ng-controller="myCtrl">
+   
+            <form  >
+               
+                Id: <input type="number" ng-model="id" readonly ></p>
+               Nome: <input type="text" ng-model="nome" ></p>
+                 Nome: <input type="date" ng-model="data" ></p>
+             
+                     
+                <button class="btn btn-success mb-4" ng-click="salvar()">salvar</button>
+             
+             
+            </form>
+  
+    </div>
+   
 </body>
 </html>
