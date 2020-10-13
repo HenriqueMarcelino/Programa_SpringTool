@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Produto {
+public class TableProduto {
 
 	private Long id;
 
@@ -63,11 +63,11 @@ public class Produto {
 	}
 
 	// Constructor
-	protected Produto() {
+	protected TableProduto() {
 
 	}
 
-	protected Produto(Long Id, String nome, String marca, String criado_em, float preco) {
+	protected TableProduto(Long Id, String nome, String marca, String criado_em, float preco) {
 		super();
 		this.id = id;
 		this.nome = nome;
